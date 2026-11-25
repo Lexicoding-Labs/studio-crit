@@ -1,6 +1,9 @@
 # Studio Crit
 
-![Studio Crit. An illustrated book spine slides into place, revealing the detail a repair customer needs to see: “Keep the existing covers.”](assets/studio-crit.svg)
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/studio-crit-mobile.svg">
+  <img src="assets/studio-crit.svg" alt="Eleven creative specialists review your website. The Creative Director resolves the findings and the Creative Producer hands one prioritized improvement plan to you and your agents." width="100%">
+</picture>
 
 Eleven creative specialists review your website and deliver one prioritized improvement plan.
 
