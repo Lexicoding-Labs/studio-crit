@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="title description">
+<title id="title">Studio Crit in motion</title>
+<desc id="description">Eleven illustrated design tools gather around a website proof. Their marks collect into three ranked actions on one sheet. A human hand and an agent gripper receive the completed plan.</desc>
+<defs>
+  <pattern id="paper" width="37" height="41" patternUnits="userSpaceOnUse"><path d="m3 6 1 .3m11 18 .9 -.4m15 12 .9 .2M34 8h.8" stroke="#766a50" stroke-width=".9" opacity=".24"/></pattern>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(29)"><path d="M0 0v7" stroke="#202b2a" stroke-width="1.6"/></pattern>
+  <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#f6eedb"/></pattern>
+  <clipPath id="poster"><path d="M-8 -63h156v138H-8z"/></clipPath>
+  <style>
+    .outline {stroke:#232a26;stroke-width:2.8;stroke-linejoin:round;stroke-linecap:round}
+    .inkline {fill:none;stroke:#232a26;stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+    .fine {fill:none;stroke:#232a26;stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round}
+    .review,.tool,.trace,.slip {opacity:0}
+    .plan,.priority,.human,.machine {opacity:1}
+    @media(prefers-reduced-motion:no-preference){
+      .review,.tool,.trace,.slip,.plan,.priority,.human,.machine,.upperJaw,.lowerJaw,.glint {
+        animation-duration:9.6s;animation-iteration-count:infinite;animation-fill-mode:both;
+        animation-timing-function:cubic-bezier(.4,0,.2,1);
+      }
+      .review {animation-name:proof}
+      .tool {animation-name:work}
+      .trace {animation-name:draw}
+      .slip {animation-name:gather}
+      .plan {animation-name:turn}
+      .priority {animation-name:rank}
+      .human {animation-name:reach}
+      .machine {animation-name:grip}
+      .upperJaw {animation-name:pinchTop}.lowerJaw {animation-name:pinchBottom}
+      .glint {animation-name:shine}
+    }
+    @keyframes proof {
+      0%{opacity:1;transform:translateY(8px) rotate(-6deg) scale(.96)}
+      9%,37%{opacity:1;transform:translateY(0) rotate(-3deg) scale(1)}
+      49%{opacity:1;transform:translateY(1px) rotate(2deg) scale(.025,.95)}
+      50%,95%{opacity:0;transform:scale(.025,.95)}
+      100%{opacity:1;transform:translateY(8px) rotate(-6deg) scale(.96)}
+    }
+    @keyframes work {
+      0%{opacity:0;transform:translate(var(--outer-x),var(--outer-y)) rotate(var(--tilt)) scale(.8)}
+      8%{opacity:1;transform:translate(0,0) rotate(0deg)}
+      19%{opacity:1;transform:translate(var(--in-x),var(--in-y)) rotate(var(--tilt))}
+      29%{opacity:1;transform:translate(0,0) rotate(0deg)}
+      37%{opacity:1;transform:translate(var(--in-x),var(--in-y)) rotate(var(--tilt))}
+      47%,100%{opacity:0;transform:translate(var(--outer-x),var(--outer-y)) rotate(var(--tilt)) scale(.65)}
+    }
+    @keyframes draw {0%,15%{opacity:0;stroke-dashoffset:190}30%,41%{opacity:1;stroke-dashoffset:0}48%,100%{opacity:0;stroke-dashoffset:0}}
+    @keyframes gather {
+      0%,32%{opacity:0;transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(.3)}
+      37%{opacity:1;transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(1)}
+      47%{opacity:1;transform:translate(var(--mx),var(--my)) rotate(18deg) scale(.85)}
+      59%{opacity:1;transform:translate(0,var(--to)) rotate(0deg) scale(.65)}
+      63%,100%{opacity:0;transform:translate(0,var(--to)) scale(.3)}
+    }
+    @keyframes turn {
+      0%,48%{opacity:0;transform:rotate(2deg) scale(.025,.95)}
+      49%{opacity:1;transform:rotate(2deg) scale(.025,.95)}
+      61%{opacity:1;transform:translateY(-5px) rotate(3deg) scale(1.04)}
+      70%,92%{opacity:1;transform:translateY(0) rotate(-2deg) scale(1)}
+      98%,100%{opacity:0;transform:translateY(30px) rotate(3deg) scale(.96)}
+    }
+    @keyframes rank {0%,54%{opacity:0;transform:translate(30px,-15px)}66%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes reach {0%,57%{opacity:0;transform:translate(-260px,110px) rotate(-10deg)}70%{opacity:1;transform:translate(-6px,5px) rotate(-1deg)}78%,92%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(-95px,76px)}}
+    @keyframes grip {0%,59%{opacity:0;transform:translate(230px,-62px) rotate(7deg)}76%,92%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(140px,-40px)}}
+    @keyframes pinchTop {0%,68%{transform:translate(6px,-17px)}78%,100%{transform:translate(0,0)}}
+    @keyframes pinchBottom {0%,68%{transform:translate(6px,20px)}78%,100%{transform:translate(0,0)}}
+    @keyframes shine {0%,76%{opacity:0;transform:scale(.1)}81%{opacity:1;transform:scale(1.15)}86%,100%{opacity:0;transform:scale(.1)}}
+  </style>
+</defs>
+<path fill="#eee6cf" d="M0 0h960v560H0z"/><path fill="url(#paper)" d="M0 0h960v560H0z"/>
+<!-- Registration marks stay still while the scene changes. -->
+<g fill="none" stroke="#888372" stroke-width="1.25"><path d="M20 30V20h10m900 0h10v10M20 530v10h10m900 0h10v-10"/></g>
+<g transform="translate(480 280)">
+<g class="review">
+  <path d="M-160 -97h334v215h-334Z" fill="#212b28"/>
+  <path class="outline" d="M-168 -108h334v215h-334Z" fill="#fff9e7"/>
+  <path class="inkline" d="M-168 -81h334"/>
+  <g fill="#303632"><circle cx="-153" cy="-95" r="3"/><circle cx="-142" cy="-95" r="3"/><circle cx="-131" cy="-95" r="3"/></g>
+  <path class="fine" d="M80 -94h67m-11 -4 6 4 -6 4"/>
+  <g clip-path="url(#poster)"><rect x="-8" y="-63" width="156" height="138" fill="#98bdb0"/>
+    <circle cx="100" cy="-31" r="23" fill="#eb542c"/>
+    <path d="M-35 95Q12 -20 86 -6T182 -74V104Z" fill="#23322e"/>
+    <path d="M-35 112Q20 -1 84 13T185 -54" fill="none" stroke="#e6b84d" stroke-width="16"/>
+    <path d="M-32 125Q24 10 86 24T186 -43" fill="none" stroke="#fff4d5" stroke-width="3"/>
+    <path d="M-20 135Q28 25 92 36T190 -24" fill="none" stroke="#fff4d5" stroke-width="2"/>
+  </g>
+  <g fill="#212b28"><path d="M-148 -48h93v9h-93zM-148 -30h115v9h-115zM-148 -12h77v9h-77z"/><path opacity=".55" d="M-148 13h104v3h-104zM-148 23h89v3h-89zM-148 33h95v3h-95z"/></g>
+  <rect x="-148" y="53" width="61" height="22" rx="2" fill="#174eaa"/><path d="M-130 64h20m-5 -4 5 4 -5 4" stroke="#fffbe8" fill="none" stroke-width="2"/>
+  <path class="fine" d="M-148 88H145"/>
+  <g class="trace" fill="none" stroke="#dd4628" stroke-width="3.5" stroke-dasharray="190" stroke-linecap="round">
+    <path d="M-155 77q-17 -37 45 -32t26 38q-31 10 -72 -3"/><path d="M5 -58v-12h21M125 80h21V58"/>
+    <path d="m-146 -7 59 3 36 -3"/>
+  </g>
+</g></g>
+<g transform="translate(226 128) rotate(-25)"><g class="tool" style="--in-x:17.8px;--in-y:12.2px;--outer-x:-53.3px;--outer-y:-36.5px;--tilt:9deg;animation-delay:0.00s"><title>Brand Strategist</title><circle class="outline" r="39" fill="#e9b549"/><circle class="outline" r="31" fill="#fff7dd"/><path d="M0 -29V-23M29 0H23M0 29V23M-29 0H-23" class="inkline"/><path class="outline" d="M16 -22 5 5 -16 22 -4 -5Z" fill="#e95734"/><path d="m-16 22 12 -27 9 10z" fill="#263632"/><circle r="3.3" fill="#fff3ce"/></g></g>
+<g transform="translate(343 80) rotate(-12)"><g class="tool" style="--in-x:9.6px;--in-y:16.0px;--outer-x:-28.8px;--outer-y:-48.0px;--tilt:-9deg;animation-delay:0.11s"><title>Art Director</title><path class="outline" d="M-44 -28h31v10h16v-10h38v54H-44z" fill="#79a998"/><path class="outline" d="M-26 -10h49v23h-49z" fill="#f6edd3"/><circle cx="-15" cy="-2" r="4" fill="#e8552c"/><path d="m-24 10 13 -10 7 6 10 -10 17 14z" fill="#28433a"/><path d="M-41 -22h12M31 -20v10" class="fine"/></g></g>
+<g transform="translate(477 64) rotate(8)"><g class="tool" style="--in-x:0.2px;--in-y:17.3px;--outer-x:-0.6px;--outer-y:-51.8px;--tilt:9deg;animation-delay:0.22s"><title>Brand Designer</title><g class="outline"><path d="m-29 23 -13 -54 24 -6 15 56z" fill="#e2a93e"/><path d="m-29 23 1 -64 24 1 -1 64z" fill="#8fb8a9"/><path d="m-29 23 19 -60 24 8 -19 58z" fill="#df552e"/><path d="m-29 23 42 -51 19 16 -44 51Z" fill="#2858b1"/></g><circle cx="-15" cy="21" r="4" fill="#f5ead2"/></g></g>
+<g transform="translate(615 78) rotate(10)"><g class="tool" style="--in-x:-9.5px;--in-y:16.2px;--outer-x:28.4px;--outer-y:-48.5px;--tilt:-9deg;animation-delay:0.33s"><title>Editorial Designer</title><path class="outline" d="M-35 -23 -23 -34h61v52L25 30h-60z" fill="#da8f57"/><path class="outline" d="M-35 -23h60v53h-60z" fill="#edbb7d"/><path class="inkline" d="m25 -23 13 -11"/><path fill="#262e29" d="M-25 14h41v5h-41zm0 -11h27v5h-27zm0 -12h39v6h-39z"/></g></g>
+<g transform="translate(755 117) rotate(19)"><g class="tool" style="--in-x:-19.3px;--in-y:13.0px;--outer-x:57.8px;--outer-y:-39.1px;--tilt:9deg;animation-delay:0.00s"><title>Motion Designer</title><path class="outline" d="M-36 -12H37V25H-36Z" fill="#273431"/><path class="outline" d="m-37 -18 71 -12 2 14 -71 12z" fill="#f7e9cb"/><path d="m-23 -19 10 -2 -8 13 -10 2zm23 -4 10 -2 -8 13 -10 2zm23 -4 9 -2 -8 13 -9 2z" fill="#29342f"/><path d="m-5 -2 15 9 -15 9z" fill="#e8b94d"/></g></g>
+<g transform="translate(797 267) rotate(42)"><g class="tool" style="--in-x:-22.2px;--in-y:1.0px;--outer-x:66.6px;--outer-y:-3.1px;--tilt:-9deg;animation-delay:0.11s"><title>Product Designer</title><path class="outline" d="M-15 37h30v-33q13 -7 13 -21a28 28 0 1 0 -56 0q0 16 13 21Z" fill="#204da1"/><circle class="outline" cy="-16" r="20" fill="#a4c8b7"/><path d="m-7 -16 14 0m-7 -7v14" class="inkline"/><path class="fine" d="M-7 14h14m-14 6h14m-14 6h14"/></g></g>
+<g transform="translate(739 408) rotate(-21)"><g class="tool" style="--in-x:-18.1px;--in-y:-10.2px;--outer-x:54.4px;--outer-y:30.7px;--tilt:9deg;animation-delay:0.22s"><title>Design Engineer</title><path class="outline" fill="#efb64d" fill-rule="evenodd" d="M-43 29 19 -37 44 29Z M-10 15h33l-9 -28Z"/><path class="fine" d="m-29 23 4 4m3 -12 6 6m2 -14 4 4m4 -12 6 6m1 -14 4 4"/></g></g>
+<g transform="translate(544 457) rotate(4)"><g class="tool" style="--in-x:-4.5px;--in-y:-14.2px;--outer-x:13.4px;--outer-y:42.5px;--tilt:-9deg;animation-delay:0.33s"><title>Experiential Designer</title><path class="outline" d="M-40 -19h80v14q-11 5 0 10v15h-80V6q11 -6 0 -12Z" fill="#e66d3e"/><path class="fine" d="M16 -16V17" stroke-dasharray="3 4"/><path d="m-30 7 9 -12 8 5 10 -8" class="inkline"/><circle cx="-29" cy="7" r="3" fill="#22312c"/><path d="m-11 -9 9 0 -2 8" class="inkline"/></g></g>
+<g transform="translate(385 458) rotate(-20)"><g class="tool" style="--in-x:6.7px;--in-y:-14.2px;--outer-x:-20.0px;--outer-y:42.7px;--tilt:9deg;animation-delay:0.00s"><title>Creative Copywriter</title><path class="outline" d="M-49 2 26 -12 34 4 -41 18 -59 16Z" fill="#cb482d"/><path class="outline" d="m-49 2 8 16 -18 -2z" fill="#e1b882"/><path d="m-55 12 3 5 -7 -1z" fill="#24332c"/><path d="m-44 7 68 -13" class="fine"/><path class="outline" d="m24 -12 11 -2 8 16 -11 2z" fill="#b8c1b2"/></g></g>
+<g transform="translate(217 416) rotate(8)"><g class="tool" style="--in-x:18.4px;--in-y:-10.9px;--outer-x:-55.2px;--outer-y:32.6px;--tilt:-9deg;animation-delay:0.11s"><title>Creative Director</title><path class="outline" d="m12 13 12 -9 30 36 -12 9z" fill="#d64f2d"/><circle class="outline" cx="-3" cy="-11" r="33" fill="#36433d"/><circle class="outline" cx="-3" cy="-11" r="25" fill="#a0c2b4"/><path d="m-18 -14 13 -14m-9 25 18 -20" stroke="#f9f2d9" stroke-width="4" stroke-linecap="round"/></g></g>
+<g transform="translate(157 268) rotate(-14)"><g class="tool" style="--in-x:22.6px;--in-y:1.0px;--outer-x:-67.8px;--outer-y:-2.9px;--tilt:9deg;animation-delay:0.22s"><title>Creative Producer</title><path class="outline" d="M-31 -29h57v68h-57z" fill="#243f71"/><path class="outline" d="M-26 -34h57v67h-57z" fill="#fff6dc"/><path class="outline" d="M-13 -36h9q0 -11 9 -11t9 11h7v13h-34z" fill="#a6b6a9"/><g fill="none" stroke="#2b3c34" stroke-width="3"><path d="m-15 -9 3 4 7 -8M-15 7l3 4 7 -8M1 -7h18M1 9h18"/></g></g></g>
+<g class="human">
+  <path class="outline" d="M-24 356 163 318 250 413 121 563H-22Z" fill="#2256aa"/>
+  <path d="m-5 407 146 -57 67 78L84 558H-7z" fill="url(#dots)" opacity=".56"/>
+  <path class="outline" d="m152 332 30 -19 79 91 -26 22z" fill="#f9eed1"/>
+  <path class="outline" d="m175 314 40 -31q20 -15 40 -14l84 1q18 1 43 -15l45 -30q11 -6 18 2 7 10 -4 18l-38 30 44 -28q13 -8 19 1 5 9 -5 17l-49 37 44 -23q14 -7 18 3 4 9 -8 16l-67 42q-40 23 -75 19l-44 -3 -44 32Z" fill="#df996b"/>
+  <path class="fine" d="m286 336 39 -7q18 -3 37 -16m-82 11 33 -6m66 -22 23 -21"/>
+</g>
+<g class="machine">
+  <path class="outline" d="m976 117 -123 18 -104 80 12 30 112 -64 104 -9z" fill="#31433d"/>
+  <path class="outline" d="m977 95 -131 20 -104 86 16 22 106 -71 113 -13z" fill="#8cb7a8"/>
+  <path class="fine" d="m953 110 -101 15 -67 55m103 -22 51 -9"/>
+  <circle class="outline" cx="852" cy="134" r="18" fill="#d7b357"/><circle class="outline" cx="852" cy="134" r="7" fill="#677568"/>
+  <path class="outline" d="m746 185 36 33 -29 41 -57 14 -25 -32 44 -45z" fill="#9fb7a7"/>
+  <path d="m746 196 23 24 -18 24 -23 2z" fill="url(#hatch)"/>
+  <circle class="outline" cx="706" cy="241" r="14" fill="#e0b859"/><circle cx="706" cy="241" r="5" fill="#263530"/>
+  <g class="upperJaw"><path class="outline" d="m697 231 -38 -30 -48 3 -9 19 19 8 8 -12 24 -2 34 29Z" fill="#9bb8aa"/></g>
+  <g class="lowerJaw"><path class="outline" d="m694 242 -25 37 -47 10 -9 -16 16 -10 8 7 21 -5 23 -35Z" fill="#7c9b8c"/></g>
+</g>
+<g transform="translate(480 280)"><g class="plan">
+  <path d="M-136 -143h247l36 38v253h-283z" fill="#26332e" transform="translate(8 8)"/>
+  <path class="outline" d="M-136 -143h247l36 38v253h-283z" fill="#fff8e1"/>
+  <path class="outline" d="M111 -143v38h36z" fill="#e7c785"/>
+  <path d="M-137 -143h17v292h-17z" fill="#df5731"/>
+  <path d="M-101 -107h69v10h-69zM-101 -86H64v5h-165z" fill="#27332c"/>
+  <path class="fine" d="M-102 -64H114"/>
+
+<g class="priority" style="animation-delay:0.0s"><rect class="outline" x="-101" y="-47" width="34" height="27" rx="3" fill="#dd5330"/><g fill="#252e29"><circle cx="-84" cy="-33" r="1.8"/></g><path d="M-49 -40h121v7h-121zM-49 -26h94v3h-94z" fill="#29362f"/><path class="fine" d="M-101 -3H113"/></g>
+<g class="priority" style="animation-delay:0.16s"><rect class="outline" x="-101" y="8" width="34" height="27" rx="3" fill="#e4b34b"/><g fill="#252e29"><circle cx="-84" cy="22" r="1.8"/><circle cx="-79" cy="22" r="1.8"/></g><path d="M-49 15h97v7h-97zM-49 29h70v3h-70z" fill="#29362f"/><path class="fine" d="M-101 52H113"/></g>
+<g class="priority" style="animation-delay:0.32s"><rect class="outline" x="-101" y="63" width="34" height="27" rx="3" fill="#9fbcab"/><g fill="#252e29"><circle cx="-84" cy="77" r="1.8"/><circle cx="-79" cy="77" r="1.8"/><circle cx="-74" cy="77" r="1.8"/></g><path d="M-49 70h72v7h-72zM-49 84h45v3h-45z" fill="#29362f"/><path class="fine" d="M-101 107H113"/></g>
+</g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:-244px;--y:-152px;--mx:-93px;--my:-107px;--to:-35px;--r:-80deg;animation-delay:0.0s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8613b"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:-127px;--y:-200px;--mx:-22px;--my:-116px;--to:20px;--r:-51deg;animation-delay:0.09s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8b649"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:7px;--y:-216px;--mx:51px;--my:-107px;--to:75px;--r:-22deg;animation-delay:0.18s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#9bb9a8"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:145px;--y:-202px;--mx:119px;--my:-82px;--to:-35px;--r:7deg;animation-delay:0.0s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8613b"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:285px;--y:-163px;--mx:184px;--my:-44px;--to:20px;--r:36deg;animation-delay:0.09s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8b649"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:327px;--y:-13px;--mx:172px;--my:36px;--to:75px;--r:65deg;animation-delay:0.18s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#9bb9a8"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:269px;--y:128px;--mx:111px;--my:98px;--to:-35px;--r:94deg;animation-delay:0.0s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8613b"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:74px;--y:177px;--mx:0px;--my:98px;--to:20px;--r:123deg;animation-delay:0.09s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8b649"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:-85px;--y:178px;--mx:-83px;--my:77px;--to:75px;--r:152deg;animation-delay:0.18s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#9bb9a8"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:-253px;--y:136px;--mx:-161px;--my:35px;--to:-35px;--r:181deg;animation-delay:0.0s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8613b"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g transform="translate(470 280)"><g class="slip" style="--x:-313px;--y:-12px;--mx:-160px;--my:-46px;--to:20px;--r:210deg;animation-delay:0.09s"><path class="outline" d="M-13 -9h26V9h-26z" fill="#e8b649"/><path class="fine" d="M-7 -3H8M-7 2H2"/></g></g>
+<g class="human"><path class="outline" d="m257 302 35 -28q12 -10 31 -11l41 -3q22 -1 35 -10l20 -12q10 -6 16 2 5 9 -5 17l-29 22q-18 12 -38 14l-18 3q-15 30 -41 40" fill="#df996b"/><path class="fine" d="m413 244 6 7 12 -8m-87 52 -13 6 -6 8"/></g>
+<g class="machine"><g class="upperJaw"><path class="outline" d="m611 204 -19 5 -8 14 15 12 23 -11z" fill="#293732"/><path class="fine" d="m595 220 9 -4m-6 9 10 -4" style="stroke:#d7cba7"/></g><g class="lowerJaw"><path class="outline" d="m625 270 -15 -9 -13 10 8 17 21 0 8 -9z" fill="#293732"/></g></g>
+<g transform="translate(644 160)"><g class="glint" fill="none" stroke="#cf4e2d" stroke-width="3.5" stroke-linecap="round"><path d="m0 8 6 -17m3 25 14 -7m-29 -4 -4 -9"/></g></g>
+</svg>

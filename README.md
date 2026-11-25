@@ -1,9 +1,6 @@
 # Studio Crit
 
-<picture>
-  <source media="(max-width: 680px)" srcset="assets/studio-crit-mobile.svg">
-  <img src="assets/review-to-handoff.svg" alt="Eleven creative specialists review your website. The Creative Director resolves the findings and the Creative Producer hands one prioritized improvement plan to you and your agents." width="100%">
-</picture>
+![Eleven illustrated creative tools inspect a website. Their marks assemble into a single ranked plan, received by a human hand and an agent gripper.](assets/studio-crit-motion.svg)
 
 Eleven creative specialists review your website and deliver one prioritized improvement plan.
 
