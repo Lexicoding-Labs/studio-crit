@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img" aria-labelledby="title desc">
+  <title id="title">Studio Crit by Lexicoding Labs</title>
+  <desc id="desc">An illustrated book's spine slides into place. An editorial note reveals the service detail a visitor needs to see: spine repair keeps the existing covers.</desc>
+  <defs>
+    <clipPath id="board"><path d="M16 0H253V291H16Z"/></clipPath>
+    <pattern id="cloth" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 1H6M1 0V6" fill="none" stroke="#fffaf1" stroke-width=".5" opacity=".28"/>
+    </pattern>
+    <g id="whorl" fill="none" stroke="currentColor" stroke-width="1.1">
+      <path id="line" d="M-80 -60C50 -54 9 34 97 32S198 -21 163 -34S84 -12 110 7S167 8 175 -6C203 -47 269 -50 318 -24"/>
+      <use href="#line" transform="translate(0 5)"/><use href="#line" transform="translate(0 10)"/>
+      <use href="#line" transform="translate(0 15)"/><use href="#line" transform="translate(0 20)"/>
+      <use href="#line" transform="translate(0 25)"/><use href="#line" transform="translate(0 30)"/>
+      <use href="#line" transform="translate(0 35)"/><use href="#line" transform="translate(0 40)"/>
+    </g>
+    <style>
+      .serif {font-family:Georgia,'Times New Roman',serif}
+      .sans {font-family:Arial,Helvetica,sans-serif}
+      .mono {font-family:'Courier New',monospace}
+      @media (prefers-reduced-motion:no-preference) {
+        .spine {animation:bind 3.4s cubic-bezier(.24,.75,.22,1) both}
+        .note {animation:reveal 4.2s ease-out both}
+        .mark {animation:underline 4.4s ease-out both}
+      }
+      @keyframes bind {0%,24%{transform:translate(-48px,-15px)}75%,100%{transform:translate(0,0)}}
+      @keyframes reveal {0%,52%{opacity:0}78%,100%{opacity:1}}
+      @keyframes underline {0%,67%{stroke-dashoffset:260}100%{stroke-dashoffset:0}}
+    </style>
+  </defs>
+  <path fill="#f5f1e8" d="M0 0h1120v480H0z"/>
+  <path fill="#243f9f" d="M568 0h552v480H568z"/>
+  <g fill="#22251e">
+    <text class="mono" x="42" y="46" font-size="16" letter-spacing="1.8">LEXICODING LABS</text>
+    <path d="M42 65H527" stroke="#a4a292"/>
+    <text class="serif" x="34" y="187" font-size="135" letter-spacing="-9">Studio</text>
+    <text class="serif" x="35" y="302" font-size="143" font-style="italic" letter-spacing="-8">Crit</text>
+    <path d="M42 340H527" stroke="#a4a292"/>
+    <text class="sans" x="42" y="390" font-size="28">Eleven creative specialists.</text>
+    <text class="sans" x="42" y="428" font-size="28">One prioritized plan.</text>
+  </g>
+  <g transform="matrix(.9,-.205,.35,.88,697,84)" stroke-linejoin="round">
+    <!-- Back board, fore edge and individual leaves. -->
+    <path d="M-2 15 257 15 257 311 -2 311Z" fill="#33291d" stroke="#101e41" stroke-width="2"/>
+    <path d="M3 6 253 2 253 296Q248 303 241 306H4Z" fill="#dfceac" stroke="#172856" stroke-width="2"/>
+    <path d="M3 290 247 290 253 286V296L244 305H3Z" fill="#eee2c8"/>
+    <g stroke="#9f8b67" fill="none" stroke-width=".9">
+      <path d="M12 295H245l8 -6M12 299H244l8 -6M12 303H242l8 -6"/>
+    </g>
+    <!-- Engraved endpaper on the existing cover. -->
+    <path d="M0 0H254V291H0Z" fill="#fb5932" stroke="#11275f" stroke-width="2"/>
+    <g clip-path="url(#board)" color="#6c2d23">
+      <use href="#whorl" transform="translate(0 15) rotate(-14 110 30)"/>
+      <use href="#whorl" transform="translate(-22 86) rotate(7 110 30)"/>
+      <use href="#whorl" transform="translate(18 146) rotate(-13 110 30)"/>
+      <use href="#whorl" transform="translate(-16 210) rotate(9 110 30)"/>
+      <use href="#whorl" transform="translate(22 275) rotate(-15 110 30)"/>
+    </g>
+    <path d="M55 77H222V200H55Z" fill="#f7ecd6" stroke="#603323" stroke-width="2"/>
+    <path d="M61 83H216V194H61Z" fill="none" stroke="#8e7254"/>
+    <text class="serif" x="138" y="130" text-anchor="middle" font-size="36" fill="#282622">Folio</text>
+    <text class="serif" x="138" y="162" text-anchor="middle" font-size="30" font-style="italic" fill="#282622">Bindery</text>
+    <path d="M115 178H161" stroke="#8e7254"/>
+    <g class="spine">
+      <path d="M-2 0Q5 -3 12 0H22V291H-2Q-6 288 -6 282V9Q-6 2 -2 0Z" fill="#1f302d" stroke="#19221f" stroke-width="2"/>
+      <path d="M-4 1H22V291H-4Z" fill="url(#cloth)"/>
+      <path d="M-3 25H20M-3 29H20M-3 258H20M-3 262H20" stroke="#dcc888" stroke-width="2"/>
+    </g>
+  </g>
+  <path d="M600 360H1088" fill="none" stroke="#b2bfdf" opacity=".65"/>
+  <text class="mono" x="600" y="390" font-size="15" fill="#e3e8f8" letter-spacing="1.6">FOLIO BINDERY / SPINE REPAIR</text>
+  <g class="note">
+    <text class="serif" x="600" y="437" font-size="35" font-style="italic" fill="#fff6df">Keep the existing covers.</text>
+    <path class="mark" d="M730 446q112 -5 213 -1" fill="none" stroke="#ff9b6a" stroke-width="3" stroke-linecap="round" stroke-dasharray="260"/>
+  </g>
+</svg>
