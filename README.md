@@ -1,10 +1,12 @@
 # Studio Crit
 
+![Studio Crit. An illustrated book spine slides into place, revealing the detail a repair customer needs to see: “Keep the existing covers.”](assets/studio-crit.svg)
+
 Eleven creative specialists review your website and deliver one prioritized improvement plan.
 
 Studio Crit is a Codex skill for teams deciding what to change before a launch or redesign. Give it a site and a task your visitor cares about. The team follows that journey, identifies where the design helps or gets in the way, and hands back decisions a designer or engineer can act on.
 
-[Run your first crit](#quick-start) · [See a sample finding](#a-finding-from-a-sample-review) · [Read the full review brief](.agents/skills/studio-crit/SKILL.md)
+[Run your first crit](#quick-start) · [Try the included example](#try-the-included-example) · [See a sample finding](#a-finding-from-a-sample-review) · [Read the full review brief](.agents/skills/studio-crit/SKILL.md)
 
 ## Quick start
 
@@ -25,6 +27,20 @@ who should own each change, and how we'll know it worked.
 ```
 
 **Use it inside an existing project.** Copy the entire [studio-crit skill directory](.agents/skills/studio-crit/) into that project's `.agents/skills/` folder, then run the same prompt from the project. A review is read-only by default. Ask separately when you want changes implemented.
+
+## Try the included example
+
+Start with [Folio Bindery](examples/folio-bindery.html), the single-page sample used in the review below. After cloning, open the HTML file in a browser to see the page, or give Codex this prompt from the repository root. The sample runs locally and uses a placeholder email address.
+
+```text
+Use $studio-crit to review examples/folio-bindery.html.
+I own a book with a damaged spine and want to keep its original covers.
+Can I tell which repair to choose and what to send the workshop?
+Check the service comparison at 375 px and at desktop width if a browser
+is available. Identify anything that still needs a live test.
+```
+
+For a quick manual check, narrow the browser window and try to compare both repair descriptions without hovering. Then try again with a pointer. The example preserves the original behavior so you can reproduce the finding yourself.
 
 ## A finding from a sample review
 
@@ -68,3 +84,11 @@ The nine specialists inspect the evidence first. The Creative Director forms an 
 | Live URL or running local build | Inspect rendered layouts, interaction states, keyboard flow and responsive behavior where accessible. Use a preview or test fixture for states beyond a real booking or purchase. |
 | Source files | Trace layout rules, copy, routes and implemented behavior. Flag predictions that need a browser retest. |
 | Screenshots or design exports | Review the visible composition, hierarchy, identity and wording. Record interaction and completion states as unverified unless the supplied material shows them. |
+
+## Common questions
+
+**Do I need eleven agent slots?** The coordinator can run specialists in waves. The full review needs a Codex environment that can spawn agents. Any missing roles appear in the report.
+
+**Can I keep my site's current identity?** Yes. Name the elements you want to keep in the brief, such as the typeface, photography or voice. Ask the Creative Director which changes improve the visitor journey within those constraints.
+
+**What should I do with the report?** Start with a Now item and give its owner the evidence and acceptance check. After the change, rerun that same journey at the original viewport and input method. That gives the team a concrete way to close the item.
