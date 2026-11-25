@@ -1,0 +1,4 @@
+interface:
+  display_name: "Studio Crit"
+  short_description: "Run an eleven-person website design review and action plan"
+  default_prompt: "Use $studio-crit to review this website and prioritize improvements."
